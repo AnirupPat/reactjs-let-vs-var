@@ -13,6 +13,7 @@ const Main = () => {
       <Button title="Debouncing" />
       <Button title="ClosureWithVar" />
       <Button title="NormalFunctionDecHoisting" />
+      <Button title="ArrowFuncHoisting" />
     </div>
   );
 };

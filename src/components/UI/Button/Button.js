@@ -8,6 +8,7 @@ import ClosureInPvtCounter from '../../../methods/ClosureInPvtCounter';
 import Debouncing from '../../../methods/Debouncing';
 import ClosureWithVar from '../../../methods/ClosureWithVar';
 import NormalFunctionDecHoisting from '../../../methods/NormalFunctionDecHoisting';
+import ArrowFuncHoisting from '../../../methods/ArrowFuncHoisting';
 
 const Button = (props) => {
     const clickHandler = (event) => {
@@ -37,6 +38,8 @@ const Button = (props) => {
             sum(5);sum(10);
         } else if(event.target.innerHTML === 'NormalFunctionDecHoisting') {
             NormalFunctionDecHoisting();
+        } else if(event.target.innerHTML === 'ArrowFuncHoisting') {
+            ArrowFuncHoisting();
         }
     }
   return <button onClick={clickHandler} className={classes.button}>{props.title}</button>;
