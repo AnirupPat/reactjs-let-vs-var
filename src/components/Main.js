@@ -5,6 +5,7 @@ const Main = () => {
   return (
     <div className={classes.main}>
       <Button title="SetTimeout Var" />
+      <Button title="SetTimeout Let" />
     </div>
   );
 };
