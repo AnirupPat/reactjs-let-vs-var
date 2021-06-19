@@ -11,6 +11,7 @@ const Main = () => {
       <Button title="Create Base 6" />
       <Button title="ClosureInPvtCounter" />
       <Button title="Debouncing" />
+      <Button title="ClosureWithVar" />
     </div>
   );
 };

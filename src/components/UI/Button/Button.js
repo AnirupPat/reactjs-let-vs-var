@@ -6,6 +6,7 @@ import setTimeoutIIFEArrow from '../../../methods/setTimeoutIIFEArrow';
 import CreateBase from '../../../methods/CreateBase';
 import ClosureInPvtCounter from '../../../methods/ClosureInPvtCounter';
 import Debouncing from '../../../methods/Debouncing';
+import ClosureWithVar from '../../../methods/ClosureWithVar';
 
 const Button = (props) => {
     const clickHandler = (event) => {
@@ -29,6 +30,10 @@ const Button = (props) => {
         } else if(event.target.innerHTML === 'Debouncing') {
             const print = () => console.log('Scrolling !!');
             Debouncing(print, 1000);
+        } else if(event.target.innerHTML === 'ClosureWithVar') {
+            let sum = ClosureWithVar();
+            sum(5);
+            sum(5);sum(10);
         }
     }
   return <button onClick={clickHandler} className={classes.button}>{props.title}</button>;
