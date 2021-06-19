@@ -7,6 +7,7 @@ import CreateBase from '../../../methods/CreateBase';
 import ClosureInPvtCounter from '../../../methods/ClosureInPvtCounter';
 import Debouncing from '../../../methods/Debouncing';
 import ClosureWithVar from '../../../methods/ClosureWithVar';
+import NormalFunctionDecHoisting from '../../../methods/NormalFunctionDecHoisting';
 
 const Button = (props) => {
     const clickHandler = (event) => {
@@ -34,6 +35,8 @@ const Button = (props) => {
             let sum = ClosureWithVar();
             sum(5);
             sum(5);sum(10);
+        } else if(event.target.innerHTML === 'NormalFunctionDecHoisting') {
+            NormalFunctionDecHoisting();
         }
     }
   return <button onClick={clickHandler} className={classes.button}>{props.title}</button>;

@@ -12,6 +12,7 @@ const Main = () => {
       <Button title="ClosureInPvtCounter" />
       <Button title="Debouncing" />
       <Button title="ClosureWithVar" />
+      <Button title="NormalFunctionDecHoisting" />
     </div>
   );
 };
