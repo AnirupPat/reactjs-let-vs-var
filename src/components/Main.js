@@ -6,6 +6,7 @@ const Main = () => {
     <div className={classes.main}>
       <Button title="SetTimeout Var" />
       <Button title="SetTimeout Let" />
+      <Button title="SetTimeout IIFE" />
     </div>
   );
 };
