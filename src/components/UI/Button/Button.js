@@ -2,6 +2,7 @@ import classes from "./Button.module.css";
 import setTimeoutVar from '../../../methods/setTimeoutVar';
 import setTimeoutLet from '../../../methods/setTimeoutLet';
 import setTimeoutIIFE from '../../../methods/setTimeoutIIFE';
+import setTimeoutIIFEArrow from '../../../methods/setTimeoutIIFEArrow';
 
 const Button = (props) => {
     const clickHandler = (event) => {
@@ -11,6 +12,8 @@ const Button = (props) => {
             setTimeoutLet();
         } else if(event.target.innerHTML === 'SetTimeout IIFE') {
             setTimeoutIIFE();
+        } else if(event.target.innerHTML === 'SetTimeout IIFE Arrow') {
+            setTimeoutIIFEArrow();
         }
     }
   return <button onClick={clickHandler} className={classes.button}>{props.title}</button>;

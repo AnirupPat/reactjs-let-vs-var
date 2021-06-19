@@ -7,6 +7,7 @@ const Main = () => {
       <Button title="SetTimeout Var" />
       <Button title="SetTimeout Let" />
       <Button title="SetTimeout IIFE" />
+      <Button title="SetTimeout IIFE Arrow" />
     </div>
   );
 };
