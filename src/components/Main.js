@@ -8,6 +8,7 @@ const Main = () => {
       <Button title="SetTimeout Let" />
       <Button title="SetTimeout IIFE" />
       <Button title="SetTimeout IIFE Arrow" />
+      <Button title="Create Base 6" />
     </div>
   );
 };

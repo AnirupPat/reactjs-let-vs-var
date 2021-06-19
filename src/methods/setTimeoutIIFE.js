@@ -3,7 +3,7 @@ const setTimeoutIIFE = () => {
         (function () {
             var j = i;
             setTimeout(() => console.log(j), 1000*j);
-        }());
+        })();
     }
 }
 
