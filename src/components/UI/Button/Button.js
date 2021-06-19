@@ -4,6 +4,7 @@ import setTimeoutLet from '../../../methods/setTimeoutLet';
 import setTimeoutIIFE from '../../../methods/setTimeoutIIFE';
 import setTimeoutIIFEArrow from '../../../methods/setTimeoutIIFEArrow';
 import CreateBase from '../../../methods/CreateBase';
+import ClosureInPvtCounter from '../../../methods/ClosureInPvtCounter';
 
 const Button = (props) => {
     const clickHandler = (event) => {
@@ -19,6 +20,11 @@ const Button = (props) => {
             let addSix = CreateBase(6);
             addSix(2);
             addSix(10);
+        } else if(event.target.innerHTML === 'ClosureInPvtCounter') {
+            let c = ClosureInPvtCounter();
+            c.add(5);
+            c.add(10);
+            c.fetch();
         }
     }
   return <button onClick={clickHandler} className={classes.button}>{props.title}</button>;
