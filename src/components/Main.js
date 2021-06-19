@@ -1,9 +1,12 @@
-import Button from './UI/Button/Button';
+import classes from "./Main.module.css";
+import Button from "./UI/Button/Button";
 
 const Main = () => {
-    return(
-        <Button title="Hi There" />
-    );
-}
+  return (
+    <div className={classes.main}>
+      <Button title="Hi There" />
+    </div>
+  );
+};
 
 export default Main;
